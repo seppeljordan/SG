@@ -32,7 +32,7 @@
 module Data.SG.Geometry.ThreeDim where
 
 import           Control.Applicative
-import           Data.Foldable        (Foldable (foldr))
+import           Data.Foldable        (Foldable (..))
 import           Data.Traversable     (Traversable (traverse))
 
 import           Data.SG.Geometry

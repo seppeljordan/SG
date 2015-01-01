@@ -37,7 +37,7 @@ module Data.SG.Geometry.TwoDim (Point2'(..), Rel2'(..), makeRel2, Line2'(..),
 
 import           Control.Applicative
 import           Control.Arrow        ((&&&))
-import           Data.Foldable        (Foldable (foldr))
+import           Data.Foldable        (Foldable(..))
 import           Data.Maybe
 import           Data.Traversable     (Traversable (traverse))
 
