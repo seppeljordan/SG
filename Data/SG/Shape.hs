@@ -44,12 +44,10 @@ module Data.SG.Shape (
 
 import           Control.Arrow
 import           Data.List
-import Data.Traversable
 import           Data.Maybe
 
 import           Data.SG.Geometry
 import           Data.SG.Geometry.TwoDim
-import           Data.SG.Matrix
 import           Data.SG.Vector
 
 -- | A type for simple 2D convex shapes.  It is expected that you will define a
@@ -97,7 +95,7 @@ moveShape x s = s {shapeCentre = shapeCentre s `plusDir` x}
 rotateShape :: (Floating a, Show a, Eq a) => a -> Shape' a -> Shape' a
 rotateShape _ s@(Circle {}) = s
 rotateShape a s@(Rectangle c _) = rotateShape a (Polygon c $ polygonPoints s)
-rotateShape a (Polygon c ps) = Polygon c ps
+rotateShape _ (Polygon c ps) = Polygon c ps
 
 -- rotateZaxis :: (Floating a, Matrix m) => a -> m a
 -- multMatrix :: (Foldable c, Applicative c, Num a, IsomorphicVectors c p, IsomorphicVectors p c) => SquareMatrix c a -> p a -> p a
