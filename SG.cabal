@@ -12,7 +12,7 @@ Description:         A small geometry library for dealing with
                      various intersection tests.  See also the SGdemo project
                      (<http://hackage.haskell.org/cgi-bin/hackage-scripts/package/SGdemo>)
 		     for an example of using the module.
-Tested-with:         GHC==6.8.2, GHC==6.10.1
+Tested-with:         GHC==6.8.2, GHC==6.10.1, GHC=7.8.4
 Build-Type:          Simple
 Category:            Data, Math
 Cabal-Version:       >=1.2
