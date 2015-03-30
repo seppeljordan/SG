@@ -16,7 +16,6 @@ Tested-with:         GHC==6.8.2, GHC==6.10.1, GHC==7.8.4
 Build-Type:          Simple
 Category:            Data, Math
 Cabal-Version:       >=1.2
-Extra-source-files:  Data/SG/Test.hs
 
    
 Library
@@ -32,3 +31,14 @@ Library
   ghc-options:       -Wall
   Extensions:        MultiParamTypeClasses FlexibleInstances FunctionalDependencies
                      ScopedTypeVariables FlexibleContexts
+
+-- The following Tests don't work anymore.
+-- Test-Suite test-all
+--     type:            exitcode-stdio-1.0
+--     main-is:         Data/SG/Test.hs
+--     build-depends:   base
+--                    , mtl
+--                    , HUnit
+--     Extensions:      FlexibleContexts
+--                      FlexibleInstances
+--                      MultiParamTypeClasses
